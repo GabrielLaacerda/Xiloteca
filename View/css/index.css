@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: white;
+  margin-top: 65px;
+  width:100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+#consultas {
+  z-index: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  position: sticky;
+  height: 100%;
+}
+#consultas::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: #399953;
+  background-repeat: no-repeat;
+  background-size: 50% 50%, 50% 50%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  background-image: linear-gradient(#399953, #399953);
+  -webkit-animation: rotate 4s linear infinite;
+  animation: rotate 4s linear infinite;
+}
+
+#consultas::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 6px;
+  top: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  background: white;
+  border-radius: 5px;
+}
+
+.m{
+  background-color: #6f4e37;
+  color:white;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  color:white;
+}
+.opcoes{
+  justify-items: center;
+  justify-content: center;
+  display:flex;
+}
+.btn{
+  margin-left:10px;
+  margin-top: 6px;
+}
+
+article {
+  background: linear-gradient(
+    to right, 
+    hsl(98 100% 62%), 
+    hsl(204 100% 59%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+h1 {
+  font-size: 10vmin;
+  line-height: 1.1;
+}
+
+h1, p{
+  margin: 0;
+}
+
+p {
+  font-family: "Dank Mono", ui-monospace, monospace;
+  font-size: min(200%, 5vmin);
+}
+#TabLaminas{
+  margin: auto;
+  width: 100%;
+}
+.display-6{
+  text-align: center;
+}
+tbody tr:hover{
+  color: #399953;
+  cursor: pointer;
+}
+.b{
+  margin-top:-2px;
+}

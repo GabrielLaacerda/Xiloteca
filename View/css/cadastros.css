@@ -1,0 +1,163 @@
+.btn-lg {
+  width: 100%;
+  margin-top: 6px;
+}
+
+.col-2 {
+  text-align: center;
+}
+
+.btn.marrom {
+  background-color: #6f4e37;
+  color: white;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: white;
+  margin-top: 65px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+#geral {
+  z-index: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  position: sticky;
+  height: auto;
+}
+
+#geral::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: #399953;
+  background-repeat: no-repeat;
+  background-size: 50% 50%, 50% 50%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  background-image: linear-gradient(#399953, #399953);
+  -webkit-animation: rotate 4s linear infinite;
+  animation: rotate 4s linear infinite;
+}
+
+#geral::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 6px;
+  top: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  background: white;
+  border-radius: 5px;
+}
+
+.especies {
+  text-align: center;
+}
+
+.col-md-10 {
+  margin: 0 auto;
+}
+
+.b {
+  margin-left: 35%;
+}
+
+#FormEspecies,
+#FormAmostra,
+#FormLamina,
+#FormParenquima,
+#FormVasos,
+#FormOrganolepticas,
+#FormRaios{
+
+  margin-top: 2%;
+}
+
+#FormImagens{
+  margin-top: 0.2%;
+}
+
+.form-label {
+  font-size: 17px;
+}
+
+::-webkit-input-placeholder {
+  font-size: 15px;
+}
+
+#armgav {
+  margin-left: 6.8%;
+}
+
+#FormAmostra>.col-md-10>label {
+  margin-top: 1.5%;
+}
+
+.tabelaEspecies,.col-md-10.tabelaAmostras {
+  margin-top: 2%;
+}
+.row-border,.cell-border{
+  border:1px solid red;
+}
+.t{
+  background-image: url("../Imagens/Arvore.png");
+}
+select:hover,a:hover,i:hover{
+  cursor:pointer;
+}
+#fotosL,#fotosA{
+  border: 1px solid 0 0.5rem 1rem 0 rgb(128, 128, 128);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem 0 rgb(128, 128, 128);
+}
+#botoesT,.bt{
+  align-items: center;
+  justify-content: center;
+
+}
+.ui-datepicker { 
+  margin-left: -275px;
+  margin-top:-40px;
+  z-index: 1000;
+}
